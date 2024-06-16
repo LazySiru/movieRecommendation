@@ -1,21 +1,14 @@
---Creates new database 
 CREATE DATABASE IF NOT EXISTS movies;
 
---Use database
 USE movies;
 
---Creates occupation table
-CREATE TABLE occupation
-(id INT,
-occupation STRING,
+CREATE TABLE IF NOT EXISTS occupation (
+    id INT,
+    occupation STRING
 )
 ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ','
 STORED AS TEXTFILE;
 
---Loads data from local data file
-LOAD DATA LOCAl INPATH './occupation.csv' 
+LOAD DATA LOCAL INPATH './occupation.dat' 
 INTO TABLE occupation;
-
---Get metadata of table
-DESCRIBE occupation;
