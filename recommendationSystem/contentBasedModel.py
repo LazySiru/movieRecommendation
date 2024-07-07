@@ -21,9 +21,6 @@ class contentBasedModel():
     calculate the Levenshtein distance to find closest title
     if a and b are exactly same, score will be 100
     """
-    def matching_score(a, b):
-        return fuzz.ratio(a, b) 
-        
     def find_closest_title(self, title):
         leven_scores = list(enumerate(content_rec['title'].apply(lambda x: fuzz.ratio(x, title))))
         sorted_lev_scores = sorted(leven_scores, key = lambda x: x[1], reverse = True)
