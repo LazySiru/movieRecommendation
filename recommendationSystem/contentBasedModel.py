@@ -1,7 +1,4 @@
-from flask import Flask, request, jsonify
 from fuzzywuzzy import fuzz
-import joblib
-import numpy as np
 import pandas as pd
 import trigger 
 
