@@ -2,4 +2,5 @@ recommendationSystem/data/
 .ipynb_checkpoints
 */__pycache__
 .DS_Store
-
+*/.DS_Store
+recommendationSystem/models/knn_clf.pkl
