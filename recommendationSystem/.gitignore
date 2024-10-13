@@ -1,1 +1,3 @@
-models/*.pkl
+models/*.pk
+cleaned_datasets/*.csv
+.DS_Store
