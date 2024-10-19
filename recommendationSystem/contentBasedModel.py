@@ -55,7 +55,7 @@ class contentBasedModel():
         )
 
         cb_recommendations = []
-        for i in range(1, len(distances_cb.flatten())):
+        for i in range(0, len(distances_cb.flatten())):
             movie_id_cb = movies.iloc[idx_cb.flatten()[i]]['title']
             cb_recommendations.append(movie_id_cb)
         
