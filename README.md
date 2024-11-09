@@ -45,7 +45,7 @@ Using the prediction algorithm, we wrapped the models into a REST API using Flas
 ## API reference
 The API by default both receives post requests and responds in JSON format.
 
-For content based recommendationmodel, give any movie name existing in movie lens dataset in field `movie_name`. The content based model has a neat feature that will attempt to fix wrong user input to the most similar movie name:
+For content based recommendation model, give any movie name existing in movie lens dataset in field `movie_name`. The content based model has a neat feature that will attempt to fix wrong user input to the most similar movie name:
 ```sh
 $ curl -X POST -d '{"movie_name": "oy Story"}' https://<host>/recommend/cb_model
 ```
